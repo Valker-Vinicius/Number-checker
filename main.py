@@ -1,4 +1,4 @@
-from facilitators import cores
+from facilitators import colors
 
 
 def readint(a):
@@ -6,7 +6,7 @@ def readint(a):
         try:
             f = int(input(a).strip())
         except (ValueError, TypeError):
-            print(f'{cores.red()}ERRO! São permitidos apenas números inteiros, tente novamente.')
+            print(f'{colors.red()}ERRO! São permitidos apenas números inteiros, tente novamente.')
             continue
         except KeyboardInterrupt:
             print('O usuário optou por não informar os dados.')
@@ -20,7 +20,7 @@ def readfloat(a):
         try:
             f = float(input(a).strip())
         except (ValueError, TypeError):
-            print(f'{cores.red()}ERRO! São permitidos apenas numeros decimais, tente novamente.')
+            print(f'{colors.red()}ERRO! São permitidos apenas numeros decimais, tente novamente.')
         except KeyboardInterrupt:
             print('O usuário optou por não informar os dados.')
             print(f'Seu número inteiro foi {n1} e o seu decimal foi {n2}')
@@ -29,6 +29,6 @@ def readfloat(a):
             return f
 
 
-n1 = readint(f'{cores.erase()}Digite um número inteiro: ')
-n2 = readfloat(f'{cores.erase()}Digite um número real: ')
+n1 = readint(f'{colors.erase()}Digite um número inteiro: ')
+n2 = readfloat(f'{colors.erase()}Digite um número real: ')
 print(f'Seu número inteiro foi {n1} e o seu decimal foi {n2}')
