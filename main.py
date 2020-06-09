@@ -15,10 +15,10 @@ def readint(userInput):
             return f
 
 
-def readfloat(a):
+def readfloat(userInput):
     while True:
         try:
-            f = float(input(a).strip())
+            f = float(input(userInput).strip())
         except (ValueError, TypeError):
             print(f'{colors.red()}ERRO! São permitidos apenas numeros decimais, tente novamente.')
         except KeyboardInterrupt:
