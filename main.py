@@ -1,10 +1,10 @@
 from facilitators import colors
 
 
-def readint(a):
+def readint(userInput):
     while True:
         try:
-            f = int(input(a).strip())
+            f = int(input(userInput).strip())
         except (ValueError, TypeError):
             print(f'{colors.red()}ERRO! São permitidos apenas números inteiros, tente novamente.')
             continue
